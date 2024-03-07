@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:text="Player's Turn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="311dp"
+            android:layout_height="87dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnAnswer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTambah">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtJawaban"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Answer" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="300dp"
+            android:text="Submit Answer"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtNum1"
+            android:layout_width="73dp"
+            android:layout_height="76dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="25dp"
+            android:text="1"
+            android:textAlignment="center"
+            android:textSize="60sp"
+            app:layout_constraintEnd_toStartOf="@+id/txtTambah"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/txtNum2"
+            android:layout_width="73dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="60dp"
+            android:text="2"
+            android:textAlignment="center"
+            android:textSize="60sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/txtTambah"
+            android:layout_width="73dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="36dp"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="60sp"
+            app:layout_constraintEnd_toStartOf="@+id/txtNum2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/txtCoba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="458dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
